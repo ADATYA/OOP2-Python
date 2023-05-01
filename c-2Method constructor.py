@@ -7,7 +7,7 @@ class car:
 
     def bus(self):
         print(self.a)
-        self.c = self.a*self.a
+        self.c = self.a*self.a # [c=a*a]
         print(self.c)
     
     

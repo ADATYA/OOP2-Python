@@ -2,7 +2,7 @@
 # Shudu class banale hobe nah tar ekta object banano lagbe then oita call korte hobe.
 # Akti class er [multiple object] thke.
 # [camel] case : BikromRoy
-# #class err vator jaita banai take [method]bole 
+# #class err vator jaita banai tak e [method]bole 
 
 class Car:
     a=10
