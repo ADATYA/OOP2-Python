@@ -70,3 +70,16 @@ class mobile:
 
 obj= mobile()
 # obj.__display101()
+
+
+class Male():
+    def __init__ (self):
+        self.__name = ""
+    def getname(self):
+        return self.__name
+    def setname(self,name):
+        self.__name=name
+obj = Male()
+obj.setname("Playboy")
+name = obj.getname()
+print(name)

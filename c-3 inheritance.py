@@ -86,17 +86,31 @@ class Studend(Person):
 
 s = Person("Bikrom","Roy")
 s.printname()
-
-class Person():
+#1..
+class Person(): #parent class
     def __init__(self,fname,lname):
         self.firstname = fname
         self.lastname = lname
     def printname(self):
         print(self.firstname,self.lastname)
 
-class Student (Person):
+class Student (Person): # child class
     def __init__(self,fname,lname):
       Person.__init__(self,fname,lname)
 
 v = Student("Sporsho", "Roy")
 v.printname() 
+
+#2...
+class Man():
+    def __init__(self,fname,lname):
+        self.firstname = fname
+        self.lastname = lname
+    def printname(self):
+        print(self.firstname,self.lastname)
+
+class Female(Man):
+    def __init__ (self,fname,lname):
+        Man. __init__(self,fname,lname)
+b = Female("Sprosho","Shingho")
+b.printname()
