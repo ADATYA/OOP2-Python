@@ -43,6 +43,7 @@ obj.display3 ()
 print()
 
 # 3.Multiple :
+
 # Note : Multiple are supported in python 
 
 class car:
@@ -61,3 +62,41 @@ obj=bus() # call the class bike ah inherit in class car
 obj.display1 ()
 obj.display2 ()
 obj.display3 ()
+
+
+## Class Study
+
+# create a base class ::
+class Ball():
+    def __init__(self):
+        print(f'Ball is created')
+
+class Person():
+    def __init__(self,fname,lname):
+        self.firstname = fname
+        self.lastname = lname
+    def printname(self):
+        print(self.firstname,self.lastname)
+
+s = Person("Bikrom","Roy")
+s.printname()
+
+class Studend(Person):
+    pass # nothing can print becouse of there is a no properties and method
+
+s = Person("Bikrom","Roy")
+s.printname()
+
+class Person():
+    def __init__(self,fname,lname):
+        self.firstname = fname
+        self.lastname = lname
+    def printname(self):
+        print(self.firstname,self.lastname)
+
+class Student (Person):
+    def __init__(self,fname,lname):
+      Person.__init__(self,fname,lname)
+
+v = Student("Sporsho", "Roy")
+v.printname() 

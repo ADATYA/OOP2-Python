@@ -1,6 +1,13 @@
-class Bus:
-    __volvo="" # Encapsuletion privet represent [__variable]
+class Devise:
+    object = 10
 
-obj=Bus()
-p=obj.__volvo
-print(p)  # AttributeError: 'Bus' object has no attribute '__volvo'
+    def add(self):
+        print("Asus is a laptop and LG is a monitor")
+
+# crtate a object:
+
+Devise1 = Devise()
+Devise2 = Devise()
+print(Devise1.object)
+print(Devise2.object)
+Devise.add()
