@@ -1,1 +1,1 @@
-super().__init__()
+Finally is always exicuted before exception
